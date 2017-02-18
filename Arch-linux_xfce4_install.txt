@@ -1,0 +1,66 @@
+https://wiki.archlinux.org/index.php/Main_page
+
+*.*Download Arch.iso
+	bt source
+*.*make usblive
+	sudo dd if=arch.iso of=/dev/sdX bs=4M
+*.*fdisk
+	fdisk -l
+	fdisk /dev/sdX
+	/  /boot swap
+*.*mkfs.ext4 -b 4096 /dev/sdX
+
+*.*mount 
+	mount /dev/sdX /mnt
+	mkdir /mnt/boot
+	mount /dev/sdX /mnt/boot	
+      		SSD: mount -t ext4 -o discard.noatime /dev/sdx
+*.*wifi-menu
+	ping baidu.com
+*.*mirrorlist
+	vim /etc/pacman.d/mirrorlist
+*.*install base system 
+	pacstarp -i /mnt base base-devel
+*.*genfstab -U /mnt >>/mnt/etc/fstab
+	check the file in /mnt/etc/fstab
+*.*arch-chroot /mnt
+	
+*.*pacman -S vim
+
+*.*vim /etc/local.gen
+	echo LANG=en_US.UTF-8 >/etc/local.conf
+*.*localtime
+	ln -sf /usr/share/zoneinfo/shanghai /etc/loaltime
+	hwclock --systohc --utc
+mkinitcpio -p linux
+hostname
+	echo 'hostname' > /etc/hostname
+	vim /etc/hosts
+pacman -S 
+	diglog wpa_supplincant iw bashh-completion grub zsh
+	test wifi-menu 
+UEFI grub install
+	grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=grub
+	grub-mkconfig -o /boot/grub/grub.cfg
+useradd
+	useradd -m yi
+	passwd
+sudo 
+	pacman -S sudo
+	chmod 
+	vim /etc/sudoers
+pacman -S 
+	wget git make autoconf automake screen alsamixer alsa-utils yaourt
+	xorg-server xorg-xinit xorg-server-utils xterm 
+	slim slim-themes archlinux-themes-slim xdg-user-dirs
+	xfce4
+enable slim.service
+
+cp /etc/X11/xinit/xinitrc ~/.xinitrc
+	nano .xinitrc  +# exec xfce4-session
+changer themes
+	nano /etc/slim.conf   defult > archlinux-soft-grey
+pacman -S 
+	net-tools open-vm-tools
+
+reboot
