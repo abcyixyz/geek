@@ -1,0 +1,27 @@
+windows 10
+预装中标麒麟。第一次开机看到电脑工作正常，还没一分钟我就与中国Linux操作系统市场占有率第一的中标麒麟失之交臂。（逃
+安装windows7于HDD，过了一段时间之后SSD到货，windows10预览版也来了，并且可以从黑win7免费升级win10。
+升级过程：windows10预览版（安装于SSD，并且预览版免激活），当然之前的windows7（安装于HDD）保留。
+windows10预览版刚开始的几个月不怎么稳定，兼容性一般，不时会出现一些小问题。不过各种新的功能，操作方式还是挺有趣的。
+微软就是微软，经过一段时间的迭代。windows10用起来已经很顺手了在一段时间内完全将其作为日常主系统。
+
+ubuntu（笔记本上使用过几个月）没逼格，一天都不知道在上面折腾点啥。。。（放弃
+Ubuntu是基于Debian发行版和GNOME桌面环境，Ubuntu的目标在于为一般用户提供一个最新同时又相当稳定，主要以自由软件建构而成的操作系统。Ubuntu目前具有庞大的社区力量支持，用户可以方便地从社区获得帮助。
+开发理念：Ubuntu计划强调易用性和国际化，以便能为尽可能多的人所用。
+
+debian(使用于vps，raspberry折腾过几次)
+raspberry+nginx+mysql+php+typecho搞了一个博客，内网可以访问。加上花生壳内网穿透版以后外网也可访问（内网版域名又长又难看）。
+使用领域：Debian以稳定性闻名，所以很多服务器都使用Debian作为其操作系统；而很多Linux的LiveCD亦以Debian为基础改写，最为著名的例子为Knoppix。而在桌面领域，Debian的一个修改版Ubuntu Linux就获得了很多Linux用户的支持，在 DistroWatch.com浏览排名 里排名一直很前面。而很多信息学竞赛亦采用Debian作为操作系统。
+对比Ubuntu、Fedora、Centos等Linux发行版，Debian stable（稳定版）以三年为更新周期，故对新上市硬件支持较差（虽然有testing，unstable但极不稳定，与Debian理念不符，且逊色于Archlinux，gentoo等滚动更新发行版 )，但极注重稳定性，低于现在Windows主流配置1到2年的PC到很好的支持。
+
+kali（使用过一段时间，一度学习过预装的软件。现安装于raspberry）
+自己在笔记本上安装使用的时候，一来预装软件较多，二桌面环境为GNOME占用资源较多，在桌面环境下部分操作会有轻微卡顿。（当然有其他桌面环境的发行版，自己也可定制。）
+树梅派预装软件较少，在尝试使用apt-get install kali-linux-full安装完整工具时，由于内存卡有限8G，无法全部安装。现阶段为用什么装什么。（桌面环境已禁用）
+Kali Linux是基Kali Linux预装了许多渗透测试软件，包括nmap（端口扫描工具）、Wireshark（数据包分析器）、John the Ripper（密码破解器）以及Aircrack-NG（一套用于对无线局域网进行渗透测试的软件）。用户可通过硬盘、live CD或live USB运行Kali Linux。Metasploit的Metasploit Framework支持Kali Linux，Metasploit一套针对远程主机进行开发和执行Exploit代码的工具。.[2]
+Kali Linux既有32位和64位的映像。可用于x86 指令集。同时还有基于ARM架构的映像，可用于树莓派和三星的ARM Chromebook.[3]于Debian的Linux发行版， 设计用于数字鉴识和渗透测试。由Offensive Security Ltd维护和资助。最先由Offensive Security的Mati Aharoni和Devon Kearns通过重写BackTrack来完成，BackTrack是他们之前写的用于取证的Linux发行版。
+
+arch（当前主系统2017.02）
+Arch Linux是朝向轻量（lightweight）以及简单（simple）的Linux发行版。其中“简单”（Simplicity）被定义为“避免不必要或复杂的修改”，也就是说，是由开发者角度定义，而非用户角度思考。
+Arch Linux项目注力于简洁主义（对开发者而言），其贡献在于对发行版的组件提供具有良好注释的配置文件，而非带有图形界面的配置工具。这也为其赢得适合“不惧怕命令行的中高级Linux用户”的发行版称号。
+滚动更新与Gentoo类似，不同于其他大部分主流Linux发行版比如Fedora和Ubuntu。ArchLinux并没有跨版本升级的概念，通过更新，任何时期的ArchLinux都可以滚动更新到最新版。
+系统软件缺乏严谨的测试管理机制，稳定性、可靠性不如Redhat、CentOS、Debian等发行版，难以在企业用户中推广。
